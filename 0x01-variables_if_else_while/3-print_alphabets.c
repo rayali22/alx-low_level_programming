@@ -13,20 +13,20 @@ int main(void)
 	char ch = 'a';
 	char CH = 'A';
 
-	/*print a - z*/
+	/*print a-z*/
 	while (ch <= 'z')
 	{
-		putchar(ch);
+		putchar (ch);
 		ch++;
 	}
 
-	/*print A - Z*/
+	/*print A-Z*/
 	while (CH <= 'Z')
 	{
-		putchar(ch);
-		ch++;
+		putchar (CH);
+		CH++;
 	}
-	putchar('\n');
+	putchar('\n')
 
 	return (0);
 }
