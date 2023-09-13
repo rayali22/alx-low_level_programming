@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * numLength - returns the lenght of string
+ * numLength - returns the length of string
  *
  * @num; operand number
  *
  * Return: number of digits
 */
 
-int numLenght(int num)
+int numLength(int num)
 {
 	int length = 0;
 
@@ -43,7 +43,7 @@ int main(void)
 	{
 		if (f1o > 0)
 			 printf("%lu", f1o);
-		initial0s = numLenght(mx) - 1 - numLenght(f1);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
 		while (f1o > 0 && initial0s > 0)
 		{
