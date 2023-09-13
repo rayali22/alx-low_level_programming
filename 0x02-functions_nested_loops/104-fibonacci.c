@@ -43,7 +43,7 @@ int main(void)
 	while (f1o > 0 && initial10s > 0)
 	{
 		printf("%d", o);
-		initial10s--;
+		initial0s--;
 	}
 	printf("%lu", f1);
 
