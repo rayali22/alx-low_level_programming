@@ -31,7 +31,7 @@ int numLenght(int num)
  * Return: 0.
 */
 
-int main(void
+int main(void)
 {
 	int count, initial0s;
 	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
