@@ -7,7 +7,7 @@
  * @num; operand number
  *
  * Return: number of digits
- */
+*/
 
 int main(void)
 {
