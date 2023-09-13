@@ -38,11 +38,11 @@ int main(void)
 
 	if (f1o > 0)
 		 printf("%lu", f1o);
-	initial0s = numLength(mx) - 1 -numLength(f1);
+	initial0s = numLenght(mx) - 1 -numLenght(f1);
 
-	while (f1o > 0 && initial10s > 0)
+	while (f1o > 0 && initial0s > 0)
 	{
-		printf("%d", o);
+		printf("%d", 0);
 		initial0s--;
 	}
 	printf("%lu", f1);
@@ -50,7 +50,7 @@ int main(void)
 	sum = (f1 + f2) % mx;
 	sumo = f1o + f2o + (f1 + f2) / mx;
 	f1 = f2;
-	f1o = f20;
+	f1o = f2o;
 	f2 = sum;
 	f2o = sumo;
 
@@ -58,6 +58,6 @@ int main(void)
 		printf(", ");
 	else
 		printf("\n");
-	}
+
 	return (0);
 }
