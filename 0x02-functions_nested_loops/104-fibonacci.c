@@ -9,36 +9,55 @@
  * Return: number of digits
 */
 
-int numLenght(int i)
+int numLenght(int num)
 {
-	unsigned long int i, j, k, j1, j2, k1, k2;
+	int length = 0;
 
-	j = 1;
-	k = 2;
+	if (!num)
+		return (1);
 
-	printf("%lu", j);
-	for (i = 1; i < 91; i++)
+	while (num)
 	{
-		printf(", %lu", k);
-		k = k + j;
-		j = k - j;
+		num = num / 10;
+		length += 1;
 	}
+	
+	return (length);
+}
 
-	j1 = j / 1000000000;
-	j2 = j % 1000000000;
-	k1 = k / 1000000000;
-	k2 = k % 1000000000;
+/**
+ * main _ The main function
+ * 1 and 2, seperated by a comma
+ * Return: 0.
+*/
 
-	for (i = 92; i < 99; ++i)
+int main(void
+{
+	int count, initial0s;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
+
+	if (f1o > 0)
+		 printf("%lu", f1o);
+	initial10s = numLength(mx) - 1 -numLength(f1);
+
+	while (f1o > 0 && initial10s > 0)
 	{
-		printf(", %lu", k1 + (k2 / 1000000000));
-		printf("%lu", k2 % 1000000000);
-		k1 = k1 + j1;
-		j1 = k1 - j1;
-		k2 = k2 + j2;
-		j2 = k2 - j2;
+		printf("%d", o);
+		initial10s--;
 	}
-	printf("\n");
+	printf("%lu", f1);
 
+	sum = (f1 + f2) % mx;
+	sumo = f1o + f2o + (f1 + f2) / mx;
+	f1 = f2;
+	f1o = f20;
+	f2 = sum;
+	f2o = sumo;
+
+	if (count !=98)
+		printf(", ");
+	else
+		printf("\n");
+	}
 	return (0);
 }
