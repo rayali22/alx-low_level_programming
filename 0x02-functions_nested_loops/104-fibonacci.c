@@ -26,9 +26,12 @@ int numLenght(int num)
 }
 
 /**
- * main _ The main function
- * 1 and 2, seperated by a comma
- * Return: 0.
+ * main - Entry point
+ *
+ * Description: prints the first 98 Fibonacci numbers
+ *	sarting with 1 and 2 followed by a new line
+ *
+ * Return: Always 0 (success).
 */
 
 int main(void)
