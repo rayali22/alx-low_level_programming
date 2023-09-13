@@ -9,7 +9,7 @@
  * Return: number of digits
 */
 
-int main(void)
+int numLenght(int i)
 {
 	unsigned long int i, j, k, j1, j2, k1, k2;
 
