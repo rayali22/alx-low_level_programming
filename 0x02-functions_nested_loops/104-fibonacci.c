@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 /**
- * main _ The main function
- * 1 and 2, seperated by a comma
- * Return: 0.
+ * numLength - returns the lenght of string
+ *
+ * @num; operand number
+ *
+ * Return: number of digits
  */
 
 int main(void)
