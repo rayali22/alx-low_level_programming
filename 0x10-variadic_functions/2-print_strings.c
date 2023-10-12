@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (counter = 1; counter <= n; counter++)
 	{
 		p = va_arg(myList, char*);
-	
+
 		if (p)
 		{
 			printf("%s", p);
