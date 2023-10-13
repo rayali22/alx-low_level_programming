@@ -190,7 +190,6 @@ int main(int argc, char *argv[])
 	char *mg, *p, *size1, *size2;
 
 	if (argc != 3)
-
 		Perror();
 	else
 	{ numero(argv[1], argv[2]);
