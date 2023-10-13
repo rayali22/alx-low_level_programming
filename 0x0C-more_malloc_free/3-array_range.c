@@ -1,34 +1,31 @@
-#include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * array_range - creates an array of integers
- * @min: first array
- * @max: second array
- *
- * Return: the pointer to the newly created array. Otherwise if min > max or
- * malloc fails, return NULL
+ * * array_range - creates an array of integers
+ * * @min: smallest number in the array
+ * * @max: lagrest value in the array
+ * *
+ * * Return: pointer to the address of the memory block
 **/
 
 int *array_range(int min, int max)
 {
-	int *array;
-	int i, len;
+	int *block;
+	int i, j = 0;
 
 	if (min > max)
 		return (NULL);
-
-	len = max - min + 1;
-	array = malloc(len * sizeof(int));
-	if (array == NULL)
+	block = malloc(sizeof(*block) * ((max - min) + 1));
+	if (block != NULL)
+	{
+		for (i = min; i <= max; i++)
+		{
+			block[j] = i;
+			j++;
+		}
+		return (block);
+	}
+	else
 		return (NULL);
 
-	for (i = 0; i < len; i++)
-	{
-		*(array + i) = min;
-		min++;
-	}
-
-	return (array);
 }
